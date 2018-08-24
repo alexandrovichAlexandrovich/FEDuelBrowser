@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular + REST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/getterConfig.js"></script>
+</head>
+<body>
+    <body ng-app="app">
+        <div id="container" ng-controller="Getter">
+            <p>Data: {{ team }}</p>
+
+
+
+            <button ng-click="getTeam()">Get Team</button>
+            <button ng-click="moveAlice(2,1)">Move Alice to (2,1)</button>
+            <button ng-click="moveAlice(2,0)">Move Alice to (2,0)</button>
+
+            <div>
+                <div ng-repeat="data in team">
+                    <p>{{ data.Class }}</p>
+                    <p>{{ data.Position }}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+</body>
+</html>
